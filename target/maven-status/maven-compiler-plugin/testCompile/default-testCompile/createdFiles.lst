@@ -1,0 +1,7 @@
+step_definitions\Hooks.class
+step_definitions\LoginSteps.class
+step_definitions\RunCukesTest.class
+pageobjects\ProductPage.class
+pageobjects\LoginPage.class
+pageobjects\BaseClass.class
+step_definitions\ProductSteps.class

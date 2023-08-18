@@ -1,0 +1,170 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-18T07:53:41.387Z",
+        "before": [
+          {
+            "result": {
+              "duration": 973725300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Successful Login with valid credentials",
+        "description": "",
+        "id": "login-into-saucedemo;successful-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1988600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1312931800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step_definitions.LoginSteps.i_open_automationpractice_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 221199700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 51
+                }
+              ],
+              "location": "step_definitions.LoginSteps.i_login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95221900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be redirected to the inventory page",
+            "match": {
+              "location": "step_definitions.LoginSteps.i_should_be_redirected_to_the_inventory_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-18T07:53:44.030Z",
+        "before": [
+          {
+            "result": {
+              "duration": 667536200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Unsuccessful Login with invalid credentials",
+        "description": "",
+        "id": "login-into-saucedemo;unsuccessful-login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1357182200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "step_definitions.LoginSteps.i_open_automationpractice_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 188108600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I login with username \"invalid_user\" and password \"invalid_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_user\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"invalid_password\"",
+                  "offset": 50
+                }
+              ],
+              "location": "step_definitions.LoginSteps.i_login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152549100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see an error message",
+            "match": {
+              "location": "step_definitions.LoginSteps.i_should_see_an_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login into SauceDemo",
+    "description": "",
+    "id": "login-into-saucedemo",
+    "keyword": "Feature",
+    "uri": "classpath:features/login.feature",
+    "tags": []
+  }
+]
